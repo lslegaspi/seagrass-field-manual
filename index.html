@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Field manual: gastropods in seagrass, Mactan Island</title>
+<style>
+:root{--bg:#eef5f3;--card:#fff;--tx:#0f2e2b;--mu:#4d6d68;--ac:#0f6e56;--acbg:#dff3ec;--bd:#c9dcd7;--warn:#fff1d9;--wt:#6b3f05;--sand:#f3e6c8;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1918;--card:#142827;--tx:#e0f0ec;--mu:#93b3ad;--ac:#5dcaa5;--acbg:#11413a;--bd:#274844;--warn:#3a2a10;--wt:#f3c978;--sand:#3b3320;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0c1918;--card:#142827;--tx:#e0f0ec;--mu:#93b3ad;--ac:#5dcaa5;--acbg:#11413a;--bd:#274844;--warn:#3a2a10;--wt:#f3c978;--sand:#3b3320;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 ui-rounded,"Avenir Next","Segoe UI",system-ui,sans-serif}
+main{max-width:640px;margin:0 auto;padding:20px 16px 110px}
+h1{font-size:24px;line-height:1.2;margin:0 0 6px}
+h2{font-size:20px;margin:0 0 12px}
+h3{font-size:16px;margin:18px 0 6px}
+p{margin:0 0 10px}
+.sub{color:var(--mu);font-size:14px;margin-bottom:16px}
+a{color:var(--ac);font-weight:600;word-break:break-word}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px 16px;margin-bottom:14px}
+.warn{background:var(--warn);color:var(--wt);border-color:transparent}
+.panel{display:none}.panel.on{display:block}
+ul.chk{list-style:none;padding:0;margin:0}
+ul.chk li{padding:0}
+ul.chk label{display:flex;gap:12px;align-items:center;padding:11px 2px;border-bottom:1px solid var(--bd);min-height:24px}
+ul.chk li:last-child label{border-bottom:0}
+input[type=checkbox]{width:22px;height:22px;accent-color:var(--ac);flex:none}
+ol.st{padding-left:22px;margin:0}ol.st li{margin-bottom:10px}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.pills button,.reset{font:inherit;font-size:14px;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:999px;padding:9px 14px;min-height:44px}
+.pills button[aria-pressed=true]{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+.board{background:var(--sand);border-radius:14px;padding:10px 8px 14px;margin-bottom:12px}
+.shore{text-align:center;font-size:13px;color:var(--mu);padding:4px 0 8px;border-bottom:3px double var(--mu);margin-bottom:8px}
+.cols{display:grid;grid-template-columns:36px repeat(3,1fr);gap:4px 10px;align-items:center}
+.cols .h{font-size:13px;text-align:center;color:var(--mu);padding-bottom:4px}
+.cols .d{font-size:12px;color:var(--mu);text-align:right}
+.q{font:inherit;font-size:13px;height:40px;border-radius:8px;border:1.5px solid var(--ac);background:var(--card);color:var(--tx)}
+.q[aria-pressed=true]{background:var(--ac);color:var(--bg)}
+.sea{text-align:center;font-size:13px;color:var(--mu);margin-top:8px}
+.prog{height:10px;border-radius:5px;background:var(--bd);overflow:hidden;margin:8px 0}
+.prog i{display:block;height:100%;width:0;background:var(--ac);transition:width .25s}
+.stat{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td,th{text-align:left;padding:7px 4px;border-bottom:1px solid var(--bd);vertical-align:top}
+nav{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--card);border-top:1px solid var(--bd);padding-bottom:env(safe-area-inset-bottom,0px)}
+nav button{flex:1;font:inherit;font-size:12px;border:0;background:none;color:var(--mu);padding:10px 2px;min-height:56px}
+nav button[aria-selected=true]{color:var(--ac);font-weight:700;box-shadow:inset 0 3px 0 var(--ac)}
+button:focus-visible,input:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+</style>
+</head>
+<body>
+<main>
+<h1>Field manual: gastropods in seagrass</h1>
+<p class="sub">Mactan Island, Cebu. Marigondon Beach and Day-As Port Baywalk.</p>
+
+<section class="panel on" id="p0">
+<h2>Before you go</h2>
+<div class="card warn"><p>Check the tide table. Sampling happens only at daytime low spring tide, ideally early morning. Never go alone. Skip the trip after heavy rain.</p></div>
+<div class="card"><h3 style="margin-top:0">Identification guides</h3>
+<p>Open these on your phone and save a copy offline before you go. Signal can be weak on the reef flat.</p>
+<p><a href="https://www.bfar.da.gov.ph/wp-content/uploads/2022/05/Field-Guide-on-Seagrass.pdf" target="_blank" rel="noopener">BFAR Field Guide on Seagrass</a><br><span class="sub">For seagrass species coding</span></p>
+<p style="margin-bottom:0"><a href="https://www.researchgate.net/profile/Kazunori-Hasegawa-2/publication/349302770_Guide_to_Marine_Gastropods_of_the_Philippines/links/6a503cf4d4da0457569d8861/Guide-to-Marine-Gastropods-of-the-Philippines.pdf?origin=publication_detail&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uRG93bmxvYWQiLCJwcmV2aW91c1BhZ2UiOiJwdWJsaWNhdGlvbiJ9fQ" target="_blank" rel="noopener">Guide to Marine Gastropods of the Philippines</a><br><span class="sub">For gastropod identification</span></p></div>
+<div class="card"><h3 style="margin-top:0">Gear checklist</h3>
+<ul class="chk" id="gear"></ul></div>
+<div class="card"><h3 style="margin-top:0">Team check</h3>
+<ul class="chk" id="team"></ul></div>
+</section>
+
+<section class="panel" id="p1">
+<h2>Lay out the site</h2>
+<div class="card"><p><b>Each site:</b> 3 transects, each 100 m long, running straight out from the shore, 25 m apart. A quadrat goes at every 10 m mark: 11 per transect, 33 per site.</p>
+<ol class="st">
+<li>Find the shoreline and pick the start of Transect 1. Record the GPS point.</li>
+<li>Run the tape from 0 m (shore) to 100 m (seaward), perpendicular to the shore.</li>
+<li>Measure 25 m along the shore and lay Transects 2 and 3 parallel to the first.</li>
+<li>Round 1 only: mark every transect start with a stake and its GPS point. Round 2 must use the exact same lines.</li>
+<li>Walk beside the line, never on it, so you don’t trample the quadrats.</li>
+</ol></div>
+<h3>Tap each quadrat when finished</h3>
+<div class="pills" id="sitebtns"></div>
+<div class="pills" id="rndbtns"></div>
+<div class="board"><div class="shore">Shoreline (0 m)</div><div class="cols" id="grid"></div><div class="sea">Seaward (100 m)</div></div>
+<div class="stat"><span id="cnt">0 / 33 quadrats</span><button class="reset" id="rst">Clear this board</button></div>
+<div class="prog"><i id="bar"></i></div>
+<p class="sub">Quadrat squares are not to scale. Progress saves on this phone only.</p>
+</section>
+
+<section class="panel" id="p2">
+<h2>At each quadrat</h2>
+<div class="card"><p>Use the 1 × 1 m quadrat. Do the steps in this order, so nothing is disturbed before it is recorded.</p>
+<ol class="st">
+<li>Place the frame at the mark. Write down the transect, quadrat number and distance from shore.</li>
+<li>Seagrass cover: lay the 5 × 5 grid frame. Each grid intersection counts as 4%. Estimate cover for each seagrass species separately.</li>
+<li>Two observers estimate cover independently, then you average the two numbers.</li>
+<li>Identify the seagrass species using the BFAR Field Guide on Seagrass (see Prep tab) for accurate species coding. Then note the dominant species and the substrate: sand, muddy sand or rubble.</li>
+<li>Photograph the quadrat before touching anything.</li>
+<li>Gastropod census: find every gastropod in the frame, whatever its species, size or position.</li>
+<li>For each one, photograph it where it sits, then record shell length (Vernier calipers) and where it was found: seagrass leaf, rhizome or sediment surface, or bare substrate.</li>
+<li>Identify it to the lowest level you can using the Guide to Marine Gastropods of the Philippines (see Prep tab). If you can’t, name it Morphospecies 1, 2, 3 and keep using the same number all study.</li>
+<li>Put non-voucher animals back where you found them.</li>
+</ol></div>
+<div class="card"><h3 style="margin-top:0">Water quality (once per site per round)</h3>
+<p>Use the multiparameter probe at mid-water depth during sampling. Wear the wrist lanyard. Record temperature, dissolved oxygen, pH, EC, TDS, salinity, SSG, BGA-PC and ORP. Rinse the probe with freshwater afterwards.</p></div>
+<div class="card"><h3 style="margin-top:0">Datasheet columns</h3>
+<table><tr><th>Round, site, transect, quadrat</th><td>plus date, tide and observers</td></tr>
+<tr><th>Seagrass</th><td>% cover per species (two observers), dominant species, substrate</td></tr>
+<tr><th>Each gastropod</th><td>ID or morphospecies, shell length (mm), where found, photo number</td></tr></table></div>
+</section>
+
+<section class="panel" id="p3">
+<h2>Samples and photos</h2>
+<div class="card"><h3 style="margin-top:0">Identification</h3>
+<p>Use shell shape, aperture, ribbing and color. Use the Guide to Marine Gastropods of the Philippines (link on the Prep tab). Photo every animal first, because photos are the audit record for every identification.</p></div>
+<div class="card"><h3 style="margin-top:0">Voucher shells</h3>
+<ol class="st">
+<li>Collect only 1 to 3 individuals per morphospecies per site. Nothing else is taken.</li>
+<li>Rinse with distilled water and air dry on absorbent paper in shade. Do not use ethanol or fluids.</li>
+<li>Store each shell in its own labeled vial or resealable bag.</li>
+<li>Label with acid-free paper: site, transect, quadrat, date, collector, shell length.</li>
+<li>In the lab, check under the microscope. If the lab ID differs from the field ID, the lab ID wins.</li>
+</ol></div>
+<div class="card warn"><p>Never collect seagrass, coral or substrate. Don’t disturb anything outside your quadrats.</p></div>
+<div class="card"><h3 style="margin-top:0">Waste</h3>
+<p>Pack out everything: gloves, bags, food wrappers, paper. Nothing stays at the site. Rinse water goes down the sink. Segregate trash by LGU rules.</p></div>
+</section>
+
+<section class="panel" id="p4">
+<h2>Stay safe</h2>
+<div class="card"><table>
+<tr><th>Sun and heat</th><td>Go at early low tide. Wear a rashguard, hat and reef-safe sunscreen. Bring water and electrolytes.</td></tr>
+<tr><th>Slips and cuts</th><td>Wear boots or amphibious shoes with grip. Move slowly. Watch for sharp shells, coral bits and debris.</td></tr>
+<tr><th>Handling shells</th><td>Wear gloves. Mind sharp edges and opercula.</td></tr>
+<tr><th>Dirty water</th><td>Gloves and boots on. Don’t put hands or face in the water. Wash with soap right after. Skip fieldwork after heavy rain.</td></tr>
+<tr><th>Travel</th><td>Seat belt on the road. Life vest on any boat. Don’t travel in rough weather.</td></tr>
+<tr><th>Buddy rule</th><td>Nobody works alone. Keep the first aid kit at the site.</td></tr>
+<tr><th>Gear</th><td>Keep phones and cameras in waterproof cases. Rinse the probe after use.</td></tr>
+</table></div>
+</section>
+</main>
+
+<nav role="tablist" aria-label="Manual sections" id="nav">
+<button role="tab" aria-selected="true" data-p="0">Prep</button>
+<button role="tab" aria-selected="false" data-p="1">Layout</button>
+<button role="tab" aria-selected="false" data-p="2">Quadrat</button>
+<button role="tab" aria-selected="false" data-p="3">Samples</button>
+<button role="tab" aria-selected="false" data-p="4">Safety</button>
+</nav>
+
+<script>
+var S={};
+function ld(){try{S=JSON.parse(localStorage.getItem('fm1')||'{}')}catch(e){S={}}}
+function sv(){try{localStorage.setItem('fm1',JSON.stringify(S))}catch(e){}}
+ld();
+var gear=['Measuring tapes (100 m of line)','Quadrat frames, 1 × 1 m','Grid frame, 5 × 5, for cover','Vernier calipers','Stakes or transect markers','GPS unit or phone with GPS','Waterproof datasheets and pencils','Permanent waterproof markers','Camera or waterproof phone case','Spare SD card or storage','Multiparameter water probe','Specimen vials and resealable bags','Acid-free labels','Disposable gloves','Gastropod ID guide saved offline on phone','Rubber boots or amphibious shoes','Rashguard, hat, sunscreen','Drinking water and electrolytes','First aid kit','Trash bag to pack out waste','BFAR seagrass guide saved offline on phone'];
+var team=['Tide table checked for the sampling day','Permits and clearances copies on hand','Buddy and two cover observers assigned','Datasheet printed for every transect','Phone charged and fully backed up'];
+function mk(id,arr,k){var u=document.getElementById(id);arr.forEach(function(t,i){var key=k+i,li=document.createElement('li'),l=document.createElement('label'),c=document.createElement('input');c.type='checkbox';c.checked=!!S[key];c.onchange=function(){S[key]=c.checked;sv()};l.appendChild(c);l.appendChild(document.createTextNode(t));li.appendChild(l);u.appendChild(li)})}
+mk('gear',gear,'g');mk('team',team,'t');
+var site=0,rnd=1;
+function seg(id,labels,get,set){var d=document.getElementById(id);d.innerHTML='';labels.forEach(function(t,i){var b=document.createElement('button');b.textContent=t;b.setAttribute('aria-pressed',get()===i);b.onclick=function(){set(i);seg(id,labels,get,set);draw()};d.appendChild(b)})}
+function bk(){return 's'+site+'r'+rnd}
+function draw(){var g=document.getElementById('grid');g.innerHTML='';var b=S[bk()]||{};g.appendChild(document.createElement('div'));['T1','T2','T3'].forEach(function(n){var h=document.createElement('div');h.className='h';h.textContent=n;g.appendChild(h)});
+for(var q=0;q<11;q++){var d=document.createElement('div');d.className='d';d.textContent=(q*10)+' m';g.appendChild(d);for(var t=0;t<3;t++){(function(t,q){var k=t+'-'+q,x=document.createElement('button');x.className='q';x.textContent=q+1;x.setAttribute('aria-label','Transect '+(t+1)+', '+(q*10)+' m');x.setAttribute('aria-pressed',!!b[k]);x.onclick=function(){var o=S[bk()]||{};o[k]=!o[k];S[bk()]=o;sv();draw()};g.appendChild(x)})(t,q)}}
+var n=0;for(var k2 in b){if(b[k2])n++}
+document.getElementById('cnt').textContent=n+' / 33 quadrats';document.getElementById('bar').style.width=(n/33*100)+'%'}
+seg('sitebtns',['Marigondon','Day-As'],function(){return site},function(i){site=i});
+seg('rndbtns',['Round 1','Round 2'],function(){return rnd-1},function(i){rnd=i+1});
+document.getElementById('rst').onclick=function(){if(confirm('Clear all ticks on this board?')){S[bk()]={};sv();draw()}};
+draw();
+var tabs=document.querySelectorAll('#nav button');
+tabs.forEach(function(b){b.onclick=function(){tabs.forEach(function(x){x.setAttribute('aria-selected',x===b)});document.querySelectorAll('.panel').forEach(function(p,i){p.classList.toggle('on',String(i)===b.dataset.p)});window.scrollTo(0,0)}});
+</script>
+</body>
+</html>
